@@ -1,2 +1,7 @@
-body{background: #fff}
-.background-image: url("https://unsplash.com/search/photos/computer");
+.h100{
+  height: 100px;
+}
+
+.alert-success{
+  background-color: #333;
+}

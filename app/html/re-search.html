@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel= "stylesheet" type="text/css" href="../../bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel= "stylesheet" type="text/css" href="../css/app.css">
 
   <title>Re-Search</title>
@@ -12,18 +13,30 @@
 
 
 </head>
-<body>
-  <P>
-    Giampa ho installato node js su Atom poi dacci un occhiata,
-    dopo questa installazione devi copiare un codice nel cdm dal sito
-    SASS-autocompile e su atom in automatico potrà creare dei fli di stile
-    per CSS...praticamente ti permette di avere librerie CSS già fatte.
-    sempre se ti serve ;)
+<body style="background-color: #ddd">
+  <!-- Alerts -->
+  <div class="alert alert-success h100" role="alert">
+    <a href="#" class="alert-link"></a>
+  </div>
 
-  </p>
+  <div class="container">
 
-  <a href="https://nodejs.org/it/download/">Nodejs</a><br>
-  <a href="https://atom.io/packages/sass-autocompile">SASS autocompile: copia il codice da REQUIREMENTS (npm install node-sass -g)</a>
 
+
+
+  <!-- input ricerca-->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+
+  <h1><center>Re-Search</center></h1>
+
+  <script type="javascript" src="/bower_components/angular/angular.js"></script>
+</div>
 </body>
 </html>
