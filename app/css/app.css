@@ -12,3 +12,13 @@
 .alert-success{
   background-color: #ccff99;
 }
+.center{
+  text-align: center;
+}
+body{
+    font-family: "The Blacklist", Georgia, Serif;
+}
+@font-face {
+  font-family: "The Blacklist";
+  src: url('../fonts/The Blacklist.ttf') format("truetype");
+}
