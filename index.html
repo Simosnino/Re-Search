@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="ReSearchApp">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <link rel= "stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+      <link rel= "stylesheet" type="text/css" href="app/css/app.css">
+
+      <title>{{title}}</title>
+  </head>
+
+  <body style="background-color: #333; color:#fff;" >
+    <!-- header -->
+    <div class="alert alert-success h100" role="alert">
+      <a href="#" class="alert-link"></a>
+    </div>
+
+    <!-- contenuto -->
+    <div class="container" data-ng-controller="contentCtrl">
+      <div data-ng-include="'app/html/re-search.html'"
+    </div>
+
+    <!-- footer -->
+    <div></div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app/js/app.js"></script>
+
+  </body>
+</html>
