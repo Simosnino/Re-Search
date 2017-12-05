@@ -18,7 +18,7 @@
     </div>
 
     <!-- contenuto -->
-    <div class="" data-ng-controller="contentCtrl">
+    <div class="container" data-ng-controller="contentCtrl">
       <div data-ng-include="'app/html/re-search.html'"
     </div>
 
