@@ -1,0 +1,41 @@
+HTML
+
+
+<div class="row text-center search-buttons">
+    <button class="btn btn-default btn-search" type="button"><span class="span-search google" aria-hidden="true">&nbsp;</span></button>
+    <button class="btn btn-default btn-search" type="button"><span class="span-search bing" aria-hidden="true">&nbsp;</span></button>
+    <button class="btn btn-default btn-search" type="button"><span class="span-search yahoo" aria-hidden="true"></span></button>
+  </div>
+
+
+
+CSS
+
+.search-buttons{
+  margin-top: 20px;
+}
+.btn-search{
+  padding: 0;
+  border-radius: 50px;
+}
+.span-search{
+  background-position: center;
+  background-size: 50px;
+  display: block;
+  height: 35px;
+  width: 35px;
+  z-index: -200;
+  border-radius: 50px;
+}
+
+.google{
+  background-image: url('/app/image/google2.jpg');
+}
+
+.bing{
+  background-image: url('/app/image/bing.jpg');
+}
+
+.yahoo{
+  background-image: url('/app/image/Yahoo3.jpg');
+}
