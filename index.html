@@ -12,19 +12,23 @@
   </head>
 
   <body style="background-color: #333; color:#fff;" >
-    <!-- header -->
-    <div class="alert alert-success h100" role="alert">
-      <a href="#" class="alert-link"></a>
+    <div class="container-fluid">
+      <!-- header -->
+      <div class="header alert alert-success h100" role="alert">
+        <a href="#" class="alert-link"></a>
+      </div>
+
+      <!-- contenuto -->
+      <div class="content" data-ng-controller="contentCtrl">
+        <div data-ng-include="'app/html/re-search.html'"
+      </div>
+
+      <div id="push"> </div>
+
+      <!-- footer -->
+
     </div>
-
-    <!-- contenuto -->
-    <div class="" data-ng-controller="contentCtrl">
-      <div data-ng-include="'app/html/re-search.html'"
-    </div>
-
-    <!-- footer -->
-    <div></div>
-
+    <div class="footer">  /*copyright SImo-Giampa 2017*/</div>
     <script src="bower_components/angular/angular.js"></script>
     <script src="app/js/app.js"></script>
 
