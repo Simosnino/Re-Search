@@ -1,0 +1,29 @@
+HTML
+
+<div class="container">   
+
+    <div class="header">  </div>	
+ 
+    <div class="content"> </div> 
+ 
+    <div id="push"> </div>
+
+</div> /*end container*/
+
+   <div class="footer"> </div> 
+
+
+CSS
+
+html, body {  height: 100%; }
+
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px; 
+}
+
+.footer, #push {
+    height: 100px; 
+}
