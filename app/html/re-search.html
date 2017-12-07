@@ -9,7 +9,7 @@
     <div class="input-group center">
     <input type="text" class="form-control" placeholder="Search for...">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        <button class="btn btn-default" type="button" data-ng-click="ricerca()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       </span>
     </div><!-- /input-group -->
   </div><!-- /.col-sm-6 -->
@@ -28,7 +28,7 @@
 
   <!-- Alerts -->
 
-  <div class="alert alert-success" role="alert">
+  <div class="alert alert-success" role="alert" data-ng-show="mostraRisultati">
     <a href="#" class="alert-link"></a>
     <div class="row">
       <div class="col-sm-4"></div>
@@ -38,9 +38,9 @@
         <img src="">
       </div>
       <div></div>
-  </div>
-  <div class="row">
-    <div class="col-sm-2"></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2"></div>
     <div class="col-sm-2 bgred">
       <p>Nome sito:</p>
       <p>Proveniente da Google</p>
@@ -83,10 +83,5 @@
       <p>Proveniente da Google</p>
       <img src="">
     </div>
-  </div>
-
-
-
-
-
+    </div>
   </div>
