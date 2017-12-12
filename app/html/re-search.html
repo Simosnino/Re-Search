@@ -7,7 +7,7 @@
 
   <div class="col-sm-6 col-sm-offset-3">
     <div class="input-group center">
-    <input type="text" class="form-control" placeholder="Search for...">
+    <input type="text" class="form-control" placeholder="Search for..." data-ng-model="ricerca.testo">
       <span class="input-group-btn">
         <button class="btn btn-default" type="button" data-ng-click="ricerca()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
       </span>
@@ -25,7 +25,7 @@
   <div>
        <h1><center>{{titolo}}</center></h1>
   </div>
-
+ {{ricerca.testo}}
   <!-- Alerts -->
 
   <div class="alert alert-success" role="alert" data-ng-show="mostraRisultati">
@@ -41,47 +41,12 @@
     </div>
     <div class="row">
       <div class="col-sm-2"></div>
-    <div class="col-sm-2 bgred">
-      <p>Nome sito:</p>
-      <p>Proveniente da Google</p>
-      <img src="">
-    </div>
-    <div class="col-sm-2 bgred">
-      <p>Home-page site:</p>
-      <p>Proveniente da Google-Bing-Yahoo</p>
-      <img src="">
-    </div>
-    <div class="col-sm-2 bgred">
-      <p>Nome sito:</p>
-      <p>Proveniente da Google</p>
-      <img src="">
-    </div>
-
-    <div class="col-sm-2 bgred">
-      <p>Nome sito:</p>
-      <p>Proveniente da Google</p>
-      <img src="">
-    </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2 bgred">
-      <p>Nome sito:</p>
-      <p>Proveniente da Google</p>
-      <img src="">
-    </div>
-    <div class="col-sm-2 bgred">
-      <p>Nome sito:</p>
-      <p>Proveniente da Google</p>
-      <img src="">
-    </div>
-    <div class="col-sm-2 bgred">
-      <p>Nome sito:</p>
-      <p>Proveniente da Google</p>
-      <img src="">
-    </div>
-    <div class="col-sm-2 bgred">
-      <p>Nome sito:</p>
-      <p>Proveniente da Google</p>
-      <img src="">
-    </div>
+      <div class="col-sm-2 bgred" data-ng-repeat="item in ricerca.risultati">
+        <a href="http://{{item.displayLink}}">
+          <p>Nome sito: {{item.htmlTitle}}</p>
+          <p>Proveniente da Google</p>
+          <img src="">
+        </a>
+      </div>
     </div>
   </div>
