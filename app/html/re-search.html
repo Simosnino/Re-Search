@@ -4,6 +4,9 @@
 
 <div class="row text-center">
   <div class="col-sm-6 col-sm-offset-3">
+    <div class="row">
+         <h1>{{titolo}}</h1>
+    </div>
     <div class="input-group center">
     <input type="text" class="form-control" placeholder="Search for..." data-ng-model="ricerca.testo">
       <span class="input-group-btn">
@@ -14,15 +17,13 @@
 </div>
 
   <div class="row text-center search-buttons">
-    <button class="btn btn-default btn-search" type="button"><span class="span-search google" aria-hidden="true">&nbsp;</span></button>
+    <button class="btn btn-default btn-search" type="button"><span class="span-search google" aria-hidden="true">&nbsp;</button></span>
     <button class="btn btn-default btn-search" type="button"><span class="span-search bing" aria-hidden="true">&nbsp;</span></button>
     <button class="btn btn-default btn-search" type="button"><span class="span-search yahoo" aria-hidden="true"></span></button>
   </div>
 
 
-  <div>
-       <h1>{{titolo}}</h1>
-  </div>
+
   <!-- Alerts -->
 
   <div class="alert alert-success" role="alert" data-ng-show="mostraRisultati">

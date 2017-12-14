@@ -5,7 +5,7 @@
 
 html, body {  height: 100%; }  /*footer*/
 body{
-    font-family: Georgia,"The Blacklist" , Serif;
+    font-family: Arial,"The Blacklist" , Serif;
     background-image: linear-gradient(to top right, #4000bf 30%, #4000bf 50%, #800080 80%);
     color:#fff;
 }
@@ -23,14 +23,20 @@ h1{
 
 .footer, #push {
     height: 100px;
+    color:#f0fff0;
+    text-align: center;
+    background-color: #333;
+
 }
 
 .h100{
-   height: 100px;
+   height: 80px;
+   width: auto;
 }
 
 .alert-success{
    background-color: #333;
+   border: 1px solid transparent;
 }
 
 .h200{
@@ -71,6 +77,7 @@ h1{
 
 .google{
   background-image: url('/app/image/google2.jpg');
+
 }
 
 .bing{
