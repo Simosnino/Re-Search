@@ -1,24 +1,28 @@
-html, body {  height: 100%; }  /*footer*/
-
-.container {
-    min-height: 70%;
-    height: auto !important;
-    height: 100%;
-    margin: 0 auto -100px;
-
-}
-
-.footer, #push {
-    height: 100px;
-}
-
 @font-face {
   font-family: "The Blacklist";
   src: url('../fonts/The Blacklist.ttf') format("truetype");
 }
-body{
-    font-family: "The Blacklist", Georgia, Serif;
 
+html, body {  height: 100%; }  /*footer*/
+body{
+    font-family: Georgia,"The Blacklist" , Serif;
+    background-image: linear-gradient(to top right, #4000bf 30%, #4000bf 50%, #800080 80%);
+    color:#fff;
+}
+
+h1{
+  font-family: "The Blacklist";
+  text-align: center;
+}
+
+.container {
+    min-height: 70%;
+    height: auto !important;
+    margin: 0 auto -100px;
+}
+
+.footer, #push {
+    height: 100px;
 }
 
 .h100{
@@ -26,7 +30,7 @@ body{
 }
 
 .alert-success{
-  background-image: linear-gradient(to top right, #4000bf 30%, #4000bf 50%, #800080 80%);
+   background-color: #333;
 }
 
 .h200{
@@ -39,12 +43,13 @@ body{
 }
 
 .bgred{
-  background-color: #333;
+  background-color: #fff;
   padding: 0.3%;
   margin: 5px;
   border: 1px solid transparent;
   border-radius: 10px;
   color: white;
+  height: 130px;
 }
 
 .search-buttons{

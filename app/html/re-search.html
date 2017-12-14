@@ -2,9 +2,7 @@
 
   <!-- input ricerca-->
 
-  <div class="row text-center">
-
-
+<div class="row text-center">
   <div class="col-sm-6 col-sm-offset-3">
     <div class="input-group center">
     <input type="text" class="form-control" placeholder="Search for..." data-ng-model="ricerca.testo">
@@ -13,7 +11,7 @@
       </span>
     </div><!-- /input-group -->
   </div><!-- /.col-sm-6 -->
-  </div>
+</div>
 
   <div class="row text-center search-buttons">
     <button class="btn btn-default btn-search" type="button"><span class="span-search google" aria-hidden="true">&nbsp;</span></button>
@@ -23,9 +21,8 @@
 
 
   <div>
-       <h1><center>{{titolo}}</center></h1>
+       <h1>{{titolo}}</h1>
   </div>
- {{ricerca.testo}}
   <!-- Alerts -->
 
   <div class="alert alert-success" role="alert" data-ng-show="mostraRisultati">
@@ -44,9 +41,10 @@
       <div class="col-sm-2 bgred" data-ng-repeat="item in ricerca.risultati">
         <a href="http://{{item.displayLink}}">
           <p>Nome sito: {{item.htmlTitle}}</p>
-          <p>Proveniente da Google</p>
-          <img src="">
-        </a>
-      </div>
+        <p>Proveniente da Google</p>
+        <img src="">
+      </a>
+    </div>
+
     </div>
   </div>

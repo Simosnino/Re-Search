@@ -11,7 +11,7 @@ angular.module('ReSearchApp', []).controller('contentCtrl', function($scope, $ht
 
       $http({
         method: 'GET',
-        url: 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCeNyIX6Wczm5X2-hIACEOmohWltUvyd-8&cx=017576662512468239146:omuauf_lfve&q='+$scope.ricerca.testo
+        url: 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCeNyIX6Wczm5X2-hIACEOmohWltUvyd-8&cx=015654590377674041867:2toi9p41d3m&q='+$scope.ricerca.testo
       }).then(function successCallback(response) {
         console.log($scope.ricerca.testo);
         console.log(response.data.items);
