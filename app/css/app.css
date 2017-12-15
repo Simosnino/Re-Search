@@ -19,13 +19,14 @@ h1{
     min-height: 70%;
     height: auto !important;
     margin: 0 auto -100px;
+    padding-top: 0px;
 }
 
 .footer {
-    height: 100px;
+    height: 102px;
     color:#f0fff0;
     text-align: center;
-    background-color: #333;
+    background-color:#333;
     margin-top: 300px;
 
 
@@ -67,12 +68,13 @@ h1{
 
 
 }
-.btn-search{
+.btn-search {
   padding: 0;
   border-radius: 50px;
 
+
 }
-.span-search{
+.span-search {
   background-position: center;
   background-size: 50px 50px;
   display: block;
@@ -88,9 +90,6 @@ h1{
     background-color: #333;
     border-color: #333;
 }
-
-
-
 
 
 .google{
