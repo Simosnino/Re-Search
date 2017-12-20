@@ -16,6 +16,16 @@ h1{
   font-size: 72px;
 }
 
+.header{
+  padding: 0;
+  height: 72px;
+}
+
+.logo{
+  margin-top: 5px;
+  width: 100px;
+  height: 60px;
+}
 .container {
     min-height: 70%;
     height: auto !important;
